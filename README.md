@@ -1,10 +1,6 @@
-# 🎬 Movie Recommendation System
+# 🎬 Personalized Movie Recommendation System
 
 > Boosting engagement on a streaming platform with personalized recommendations — an end-to-end data-science case study, from business framing through EDA, five modeling families, task-appropriate evaluation, and business translation.
-
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6-orange)](https://scikit-learn.org/)
-[![Dataset](https://img.shields.io/badge/data-MovieLens-informational)](https://grouplens.org/datasets/movielens/)
 
 ---
 
@@ -93,14 +89,7 @@ recommend(user_id=1, n=10, model="hybrid")
 └── data/                               # MovieLens files (auto-downloaded, gitignored)
 ```
 
-## 🔭 Limitations & Future Work
-
-Small offline dataset (~610 users); offline metrics are a proxy for real engagement, so the natural next step is an **online A/B test**. Roadmap: learning-to-rank (BPR/WARP), regularized MF via SGD/ALS, implicit-feedback modeling, neural/sequence models (two-tower, GRU4Rec, SASRec), and productionization with ANN retrieval (FAISS). See the notebook's final section for details.
 
 ## 📄 Data Attribution
 
 F. Maxwell Harper and Joseph A. Konstan. 2015. *The MovieLens Datasets: History and Context.* ACM Transactions on Interactive Intelligent Systems (TiiS). [DOI:10.1145/2827872](https://doi.org/10.1145/2827872)
-
----
-
-*Built as a data-science portfolio project. The pipeline is catalog-agnostic — the same techniques power **product**, music, and news recommendations.*
